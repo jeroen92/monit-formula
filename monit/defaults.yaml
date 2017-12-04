@@ -4,6 +4,8 @@ monit:
   pkg: monit
   config: '/etc/monit/monitrc'
   config_includes: '/etc/monit/conf.d'
+  logfile: 'syslog'
+  daemon_interval: 30
   service:
     name: monit
   http_access: 

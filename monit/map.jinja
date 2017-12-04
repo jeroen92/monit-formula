@@ -17,6 +17,10 @@ that differ from whats in defaults.yaml
             'config_includes': '/etc/monit.d'
         },
         'RedHat': {},
+        'FreeBSD' {
+            'config': '/usr/local/etc/monitrc',
+            'config_includes': '/usr/local/etc/monit.d/'
+        }
   }
   , grain="os_family"
   , merge=salt['pillar.get']('monit:lookup'))

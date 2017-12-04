@@ -1,4 +1,6 @@
-set daemon  10
+{%- from "monit/map.jinja" import monit with context -%}
+set daemon {{ monit.daemon_interval }}
+set logfile {{ monit.logfile }}
 
 set httpd port {{ http_access.port }} and
   use address {{ http_access.bind }}
