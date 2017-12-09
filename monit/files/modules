@@ -1,4 +1,4 @@
-{% set indent_increment = 4 %}
+{% set indent_increment = 2 %}
 
 {%- macro monit_block(value, key=None, operator=' ', delim='', ind=0) -%}
     {%- if value != None -%}
