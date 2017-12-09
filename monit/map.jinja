@@ -13,13 +13,11 @@ that differ from whats in defaults.yaml
         'Kali': {},
         'Gentoo': {
             'pkg': 'app-admin/monit',
-            'config': '/etc/monitrc',
-            'config_includes': '/etc/monit.d'
+            'config_file': '/etc/monitrc',
         },
         'RedHat': {},
         'FreeBSD': {
-            'config': '/usr/local/etc/monitrc',
-            'config_includes': '/usr/local/etc/monit.d/'
+            'config_file': '/usr/local/etc/monitrc',
         }
   }
   , grain="os_family"
