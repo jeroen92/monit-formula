@@ -1,6 +1,6 @@
 {% from "monit/map.jinja" import monit with context %}
 
-{{ monit.configdir }}:
+{{ monit.config_file }}:
   file.managed:
     - source: salt://monit/files/monitrc
     - template: jinja
