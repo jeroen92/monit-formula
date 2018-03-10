@@ -4,5 +4,6 @@
   file.managed:
     - source: salt://monit/files/monitrc
     - template: jinja
+    - mode: 700
     - context:
       config: {{ monit.config }}
